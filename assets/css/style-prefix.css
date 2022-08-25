@@ -217,7 +217,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
  * NOTIFICAÇÃO 
  */
 
-.notification-toast {
+ .notification-toast {
   position: fixed;
   bottom: 80px;
   left: 20px;
@@ -249,6 +249,47 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
           animation: slideInOut 5s ease-in-out infinite;
 }
 
+@-webkit-keyframes slideInOut {
+
+  0%,
+  45%,
+  100% {
+    -webkit-transform: translateX(-webkit-calc(-100% - 40px));
+            transform: translateX(calc(-100% - 40px));
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  50%,
+  95% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+}
+
+@keyframes slideInOut {
+
+  0%,
+  45%,
+  100% {
+    -webkit-transform: translateX(-webkit-calc(-100% - 40px));
+            transform: translateX(calc(-100% - 40px));
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  50%,
+  95% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+}
 
 .notification-toast.closed { display: none; }
 
@@ -300,7 +341,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   font-size: var(--fs-10);
   color: var(--sonic-silver);
 }
-
 
 
 
