@@ -951,7 +951,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 /*-----------------------------------*\
-  #Produtos pequenos
+  #Produtos novos
 \*-----------------------------------*/
 
 .product-minimal { margin-bottom: 30px; }
@@ -1947,6 +1947,13 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
     -o-transition: var(--transition-timing);
     transition: var(--transition-timing);
   }
+  .panel-list-item img {
+    max-width:200px;
+    max-height:150px;
+    width: 200px;
+    height: 150px;
+  
+}
 
   .dropdown-list .dropdown-item a:hover { color: var(--blue); }
 
